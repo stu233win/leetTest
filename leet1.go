@@ -16,10 +16,10 @@ return [0, 1].
 
 */
 
-package leetcode 
+package leetcode
 
 func twoSum(nums []int, target int) []int {
-  a:=len(nums)
+	a:=len(nums)
 	mapNumber := make(map[int]int)
 	for i:=0;i<a;i++{
 		for k,v:= range mapNumber {
@@ -29,11 +29,11 @@ func twoSum(nums []int, target int) []int {
 		}
 		mapNumber[nums[i]] =i
 	}
-   return nil
+	return nil
 }
 
 func twoSum(nums []int, target int) []int {
-    mapNumber := make(map[int]int)
+	mapNumber := make(map[int]int)
 	for i:=0;i<len(nums);i++{
 		another:=target-nums[i]
 		if _,ok:=mapNumber[another];ok{
